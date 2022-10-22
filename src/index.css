@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+.nav_selected_item {
+  border-left: 4px solid #000;
+}
+
+.nav-circle {
+  background-color: #E0E0E0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.nav-rectangle {
+  background-color: #E0E0E0;
+  width: 200px;
+  height: 25px;
+}
+
+.app_body_open {
+  width: 70%;
+  position: absolute;
+  right: 0;
+}
+
+.app_body_close {
+  width: 100%;
+  position: absolute;
+  right: 0;
+}
