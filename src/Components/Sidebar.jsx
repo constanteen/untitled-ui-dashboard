@@ -1,10 +1,11 @@
 import { Nav, Offcanvas } from 'react-bootstrap'
+import Logo from "../assets/logo.png";
 
 export default function Sidebar({ show, handleClose }) {
   return (
     <Offcanvas show={show} onHide={handleClose} backdrop={false} style={{ backgroundColor: "#F2F2F2"}}>
       <Offcanvas.Header closeButton className="p-5">
-        <Offcanvas.Title className="text-center">Untitled Ui</Offcanvas.Title>
+        <Offcanvas.Title className="text-center"><span><img src={Logo} width={30} height={30} className="me-3" /></span>Untitled UI</Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body className="ms-5 me-3">
         <div className='d-flex justify-content-center p-3 bg-white align-items-center nav_selected_item'>

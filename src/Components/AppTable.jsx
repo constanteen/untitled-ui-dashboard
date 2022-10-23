@@ -4,7 +4,7 @@ export default function AppTable() {
   const tables = [
     {
       id: "1",
-      icon: <i class="bi bi-file-earmark-person-fill"></i>,
+      icon: <i class="bi bi-image-fill"></i>,
       title: "My Photo",
       type: "PNG File",
       time: "10/7/2022 10:16AM",
@@ -12,7 +12,7 @@ export default function AppTable() {
     },
     {
       id: "2",
-      icon: <i class="bi bi-file-earmark-person-fill"></i>,
+      icon: <i class="bi bi-folder-fill"></i>,
       title: "Music",
       type: "Zip File",
       time: "10/7/2022 10:16AM",
@@ -20,7 +20,7 @@ export default function AppTable() {
     },
     {
       id: "3",
-      icon: <i class="bi bi-file-earmark-person-fill"></i>,
+      icon: <i class="bi bi-file-code-fill"></i>,
       title: "Index",
       type: "HTML",
       time: "10/7/2022 10:16AM",
@@ -28,7 +28,7 @@ export default function AppTable() {
     },
     {
       id: "4",
-      icon: <i class="bi bi-file-earmark-person-fill"></i>,
+      icon: <i class="bi bi-file-earmark-fill"></i>,
       title: "Result",
       type: "PDF File",
       time: "10/7/2022 10:16AM",
@@ -36,7 +36,7 @@ export default function AppTable() {
     },
     {
       id: "5",
-      icon: <i class="bi bi-file-earmark-person-fill"></i>,
+      icon: <i class="bi bi-image-fill"></i>,
       title: "Mum Pic",
       type: "PNG File",
       time: "10/7/2022 10:16AM",
@@ -46,7 +46,7 @@ export default function AppTable() {
 
   return (
     <div>
-      <Table hover>
+      <Table hover responsive>
         <thead>
           <tr className="fw-light" style={{ color: "#BDBDBD" }}>
             <th className="fw-normal">Name</th>
@@ -60,11 +60,11 @@ export default function AppTable() {
           {
             tables.map((row) => (
               <tr key={row.id}>
-                <td className="fw-bold">{row.icon} {row.title}</td>
-                <td>{row.type}</td>
-                <td>{row.time}</td>
-                <td>{row.size}</td>
-                <td>
+                <td className="fw-bold py-4">{row.icon} &nbsp; {row.title}</td>
+                <td className="py-4">{row.type}</td>
+                <td className="py-4">{row.time}</td>
+                <td className="py-4">{row.size}</td>
+                <td className="py-4">
                   <i class="bi bi-three-dots-vertical"></i>
                 </td>
               </tr>
